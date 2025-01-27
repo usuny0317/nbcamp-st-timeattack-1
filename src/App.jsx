@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -47,7 +45,8 @@ function App() {
   }
 
   function delCountry(name){
-    const nowcountrys = countrys.filter((country)=>{country.name!==name})
+    alert("삭제하기")
+    const nowcountrys = countrys.filter((country)=>{return country.name!==name})
     setCountrys([...nowcountrys])
   }
 
